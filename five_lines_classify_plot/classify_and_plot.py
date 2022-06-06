@@ -42,13 +42,12 @@ def _get_the_fund():
         return fund_id
     try:
         fund_id = pd.read_excel\
-                       ('YahooConnectToFundsList.xlsx', sheet_name='Yahoo奇摩基金代碼')[['基金名稱', '基金代碼']]
-        富邦可售 = pd.read_excel('YahooConnectToFundsList.xls.xlsx', sheet_name='data_20190315101510(富邦可售基金)',\
+                       ('(O)Yahoo與可售基金連結查詢五線譜.xls.xlsx', sheet_name='Yahoo奇摩基金代碼')[['基金名稱', '基金代碼']]
+        富邦可售 = pd.read_excel('(O)Yahoo與可售基金連結查詢五線譜.xls.xlsx', sheet_name='data_20190315101510(富邦可售基金)',\
                          usecols=['名稱']).dropna()['名稱']
-    except:  
+    except:
         print("可售基金excel檔須放在package下!")
-        
-        raise 
+        raise
     富邦可售 = 富邦可售.apply(lambda x: re.sub(r"\([^)]{8,}\)", "", x))
     基金名稱 = fund_id['基金名稱'].apply(lambda x: x.replace(" ", ""))
     arr = np.array([[difflib.SequenceMatcher(None, n, name).quick_ratio() for name in 基金名稱] for n in 富邦可售])
