@@ -12,7 +12,7 @@ from pandas.plotting import register_matplotlib_converters
 from datetime import datetime
 import math
 import numpy as np
-import talib
+# import talib
 import re
 
 from IPython.display import display, Markdown, clear_output

@@ -3,3 +3,7 @@ flask
 FinMind
 # sqlalchemy==1.4.22
 line-bot-sdk==1.20.0
+selenium
+ipywidgets
+ta
+webdrivermanager
