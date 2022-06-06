@@ -2,8 +2,8 @@
 Title: Fund Recommendation Bot
 Summary: 基金推薦系統
 Authors: Huan CHen and Chuboy
-Date: 2022/06/06
-Tags: Python
+Date: 2022/06/06 v2
+Tags: Python 
 ---
 
 # Vue+Fastapi
