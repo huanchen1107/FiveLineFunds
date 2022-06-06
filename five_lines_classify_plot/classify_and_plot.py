@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[1]:
-
 import os
 import difflib
 import pickle
@@ -10,8 +7,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import gridspec
 from pandas.plotting import register_matplotlib_converters
-register_matplotlib_converters()
-get_ipython().run_line_magic('matplotlib', 'inline')
+# register_matplotlib_converters()
+# get_ipython().run_line_magic('matplotlib', 'inline')
 from datetime import datetime
 import math
 import numpy as np
